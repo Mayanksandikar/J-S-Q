@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /* flex-flow: row; */
+            
+            }
+            
+            .flex-display{
+                height: 200px;
+                width: 200px;
+                border: 2px solid red;
+            }
+            .timer{
+                text-align: center;
+                font-size: 100px;
+                background-color: silver;
+                color:red ;
+            }
+    </style>
+</head>
+<body>
+    <div id="text">text Lorem ipsum dolor sit amet.</div>
+    <h1>RR VS  DOM </h1>
+
+    <div class="box1">box</div>
+    <h1 id="hel">hello</h1>
+    <div class="flex">
+        <div class="flex-display">
+    
+      </div>    <div class="flex-display">
+    
+      </div>    <div class="flex-display">
+    
+      </div>
+    </div>
+    <button onclick="myLocal()">clickme</button><br>
+
+    <h1 id="hed"> hello world</h1>
+    <button onclick="myLocal2()">change the h1 tag</button><br><br><br>
+    <div class="timer">
+        <span id="hours">00</span>
+        <span id="minuts">00</span>
+        <span id="seconds">00</span>
+    </div>
+
+    <p> Select one from the given options:
+        <select id="select1">
+            <option value="2020-2021">2020-2021</option>
+            <option value="2021-2023">2021-2023</option>
+            <option value="2023-2024">2023-2024</option>
+        </select>
+    </p>
+    <p> The value of the option selected is:
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check option </button>
+    <script src="index.js"></script>
+</body>
+</html>
