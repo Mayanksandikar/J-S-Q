@@ -1,19 +1,21 @@
 // Q 1
-// function counter(){
-//     var counter = 0;
+function counter(){
+    var counter = 0;
 
-//     function IncreaseCounter() {
-//         return counter += 1;
-//     };
+    function IncreaseCounter() {
+        return counter += 1;
+    };
 
-//     return IncreaseCounter;
-// }
+    return IncreaseCounter;
+}
 
-// var counter = counter();
-// alert(counter());
-// alert(counter());
-// alert(counter());
-// alert(counter());
+var counter = counter();
+alert(counter());
+alert(counter());
+alert(counter());
+alert(counter());
+
+// output :> the page says 1,2,3,4,5
 
 // Q2
 let count = 0;
